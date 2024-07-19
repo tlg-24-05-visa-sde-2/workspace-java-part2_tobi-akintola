@@ -8,6 +8,7 @@ public class DuckRacerTest {
         System.out.println(racer);
 
         racer.win(Reward.PRIZES);
-        racer.
+        racer.win(Reward.PRIZES);
+        racer.win(Reward.DEBIT_CARD);
     }
 }
