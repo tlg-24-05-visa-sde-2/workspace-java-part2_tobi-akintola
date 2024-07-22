@@ -40,6 +40,16 @@ public class OrderTest {
      */
     @Test
     public void testProcessCart() {
+        Order order1 = new Order("order-1");
+        order1.processCart(productCart);    //ShoppingCrt<Product>
+        System.out.println();
 
+        Order order2 = new Order("order-2");
+        order2.processCart(musicCart);      //ShoppingCart<musicItem>
+        System.out.println();
+
+        Order order3 = new Order("order-3");
+        order3.processCart(mediaCart);      //ShoppingCart<mediaCart>
+        System.out.println();
     }
 }
