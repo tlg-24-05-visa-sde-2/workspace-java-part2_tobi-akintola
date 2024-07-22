@@ -98,10 +98,6 @@ public class InMemoryCatalog implements Catalog {
      * TASK: find the average price of items in the specified genre (MusicCategory).
      */
 
-    public double averagePrice(){
-
-    };
-
 
     /**
      * TASK: are all items priced at least $10?

@@ -28,7 +28,15 @@ public class Catalog {
      * A no-matches result should be an empty collection (not null).
      */
     public static Collection<Television> findByBrand(String brand) {
-        return null;
+        Collection<Television> result = new ArrayList<>();
+
+        for(Television tv : catalog){
+            if(tv.getBrand().equals(brand)){
+                result.add(tv);
+            }
+        }
+
+        return result;
     }
 
     /**
@@ -36,8 +44,21 @@ public class Catalog {
      * with a corresponding collection of matching Televisions for that brand.
      * A no-brands-passed result should be an empty map (not null).
      */
-    public static Map<String,Collection<Television>> findByBrands(String... brands) {
-        return null;
+
+    //if client says this:
+    //catalog.findByBrands("Sony")           first will be sony, rest will be empty array
+    //Catalog.findByBrands("Sony", "RCA")    first will be sony, rest will be array of length 1
+    public static Map<String,Collection<Television>> findByBrands(String first, String... rest) {
+        Map<String,Collection<Television>> map = new HashMap<>();
+
+        //TODO:
+        //1. Call findByBrand() method with your first - this returns collection of television
+        //put the value of first and this collection in the map
+
+        //2. For each string in the rest call findbybrand then get collection back
+        //put that string and this collection in the map
+
+        return map;
     }
 
     /**
