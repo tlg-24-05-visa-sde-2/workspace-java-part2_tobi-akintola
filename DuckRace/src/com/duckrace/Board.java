@@ -38,7 +38,7 @@ import java.util.*;
  *   17       17    Dom        1    DEBIT_CARD
  */
 
-class Board {
+public class Board {
     private final Map<Integer,String> studentIdMap = loadStudentIdMap();
     private final Map<Integer,DuckRacer> racerMap  = new TreeMap<>();
 
@@ -65,7 +65,7 @@ class Board {
     //FOR TESTING ONLY
     //TODO: Render dta as we see it in the "real" application
     //see session 5 in java part 1
-    void show(){
+    public void show(){
         Collection<DuckRacer> racers = racerMap.values();
 
         //print headers
